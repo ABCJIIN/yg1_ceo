@@ -173,7 +173,7 @@ footer {
 
 /* 슬라이드 내부 텍스트 */
 .swiper-slide .txt-wrap {
-    min-height: 252px;
+    /* min-height: 252px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;

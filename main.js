@@ -36,7 +36,7 @@ $(function () {
     // Swiper 초기화 (각 Swiper 인스턴스를 개별적으로 생성)
     $('.ceoSwiper, .ceoSwiper02, .ceoSwiper03, .ceoSwiper04').each(function () {
         new Swiper(this, {
-            // autoHeight : true,
+            autoHeight : true,
             pagination: {
                 el: $(this).find(".swiper-pagination")[0], // 해당 Swiper 내부의 pagination 찾기
                 type: "fraction",
