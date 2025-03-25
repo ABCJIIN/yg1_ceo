@@ -109,6 +109,9 @@ footer {
     letter-spacing: -0.64px;
     line-height: 20px;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tab-menu .tab-list li.on {
