@@ -174,6 +174,10 @@ footer {
     width: 640px;
 }
 
+.swiper-slide.mo {
+    display: none;
+}
+
 /* 슬라이드 내부 텍스트 */
 .swiper-slide .txt-wrap {
     min-height: 252px;
@@ -185,12 +189,23 @@ footer {
     padding: 28px 0;
 }
 
+.swiper-slide .txt-wrap.mo {
+    height: 288px;
+    display: none;
+}
+
 .swiper-slide .txt-wrap p {
     color: #656565;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: -0.64px;
+}
+
+.swiper-slide .txt-wrap.mo p {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.56px;
 }
 
 /* 슬라이드 버튼 */
@@ -401,7 +416,23 @@ footer {
         padding-bottom: 240px;
     }
 
+    .swiper-slide .txt-wrap {
+        height: 288px;
+    }
+
     .swiper-slide .txt-wrap p {
-        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .swiper-slide.mo {
+        display: block;
+    }
+
+    .swiper-slide .txt-wrap.mo + .txt-wrap {
+        display: none;
+    }
+
+    .swiper-slide .txt-wrap.mo {
+        display: flex;
     }
 }

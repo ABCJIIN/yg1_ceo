@@ -56,7 +56,7 @@ function setFlowBanner(bannerWrap) {
     let bannerList = bannerWrap.find('.list');
     let bannerWrapWidth = bannerWrap.width();
     let bannerListWidth = bannerList.outerWidth(true); // 정확한 너비 계산
-    const speed = 150;
+    const speed = 30;
 
     // 기존 복제된 배너 삭제
     bannerWrap.find('.clone').remove();
