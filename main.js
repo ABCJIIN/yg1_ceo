@@ -88,18 +88,9 @@ function setFlowBanner(bannerWrap) {
             });
         }
 
-        // 기존 이벤트 리스너 제거 후 다시 등록 (중복 방지)
-        bannerWrap.off('mouseenter mouseleave')
-            .on('mouseenter', function () {
-                bannerWrap.find('.list').css('animation-play-state', 'paused');
-            })
-            .on('mouseleave', function () {
-                bannerWrap.find('.list').css('animation-play-state', 'running');
-            });
     } else {
         // 화면 너비가 1100px 초과 시 모든 클론 삭제 및 애니메이션 제거
         bannerWrap.find('.clone').remove();
         bannerWrap.find('.list').css('animation', 'none');
-        bannerWrap.off('mouseenter mouseleave');
     }
 }
