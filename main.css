@@ -98,6 +98,7 @@ footer {
     border: 1px solid #ccc;
     background: #EDEDED;
     transition: all 0.25s;
+    cursor: pointer;
 }
 
 .tab-menu .tab-list li a {
@@ -180,13 +181,14 @@ footer {
 
 /* 슬라이드 내부 텍스트 */
 .swiper-slide .txt-wrap {
-    min-height: 252px;
+    height: 252px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 12px;
     padding: 28px 0;
+    box-sizing: content-box;
 }
 
 .swiper-slide .txt-wrap.mo {
@@ -198,7 +200,7 @@ footer {
     color: #656565;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 24px;
     letter-spacing: -0.64px;
 }
 
@@ -217,7 +219,7 @@ footer {
     position: relative;
     width: 96px;
     height: 24px;
-    margin-bottom: 38px;
+    margin: 0 0 38px;
 }
 
 .swiper > .btn-wrap .swiper-button-prev {
