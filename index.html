@@ -4,106 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>와이지원 회장님 경영철학</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="/main.css"> -->
+     <link rel="stylesheet" href="reset.css">
+     <link rel="stylesheet" href="/common.css">
+    <!-- <script src="/main.js"></script> -->
 </head>
-<body>
-    <div class="container">
-        <header>헤더영역</header>
-        <div class="ceo-word">
-            <div class="inner">
-                <div class="swiper ceoSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="left">
-                                <div class="title-wrap">
-                                    <span>01</span>
-                                    <strong>도전적 비전</strong>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="line-wrap">
-                                    <div class="logo"></div>
-                                </div>
-                                <div class="txt-wrap">
-                                    <ul>
-                                        <li>
-                                            <p>세계 최고의 기업을 만든다는 생각밖에 없습니다.</p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                위기는 늘 기회였습니다. 1997년 외환위기 때 한 단계 도약했고,<br>
-                                                2008년 글로벌 금융위기 때도 마찬가지였습니다
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                2035년 명실상부한 글로벌 1위<br>
-                                                절삭공구 전문기업이 되겠습니다.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                숫자가 한정된 올림픽 금메달에 비해, 사업의 경우 세분화에 따라<br>
-                                                그 분야가 무궁무진하다고 여겼기에, 엔드밀 분야의 1등 되는 것이<br>
-                                                올림픽 금메달보다 쉬울 거라는 생각을 했고, 그에 따른<br>
-                                                노력의 결과 엔드밀 분야의 글로벌 No. 1이 되었습니다.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                과거는 역사(History),<br>
-                                                미래는 미스터리(Mystery),<br>
-                                                현재는 신이 준 선물(Present)입니다.
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="left">
-                                <div class="txt-wrap">
-                                    <ul>
-                                        <li>
-                                            <p>
-                                                기업은 이유를 불문하고 생존해야 합니다.<br>
-                                                이를 위해선 최고경영자를 포함한 모든 임직원이<br>
-                                                늘 변화와 혁신에 관심을 쏟아야 합니다.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                와이지-원은 우수한 품질, 성실한 경영으로<br>
-                                                세계 속의 와이지-원을 성취합니다.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                절삭공구 분야 글로벌 넘버원은<br>
-                                                내 삶의 시작이자 영원한 목표입니다.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                인재와 기술을 바탕으로 고객 이익을 먼저 생각하는 회사,<br>
-                                                혁신적인 사고를 존중하는 미래지향적 회사,<br>
-                                                성실하고 투명한 경영을 바탕으로<br>
-                                                인류 사회 발전에 기여하는 초일류 기업을 만들 것입니다.
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <ul>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+<body translate="no">
+    <header>헤더</header>
+    <div class="pages">
+        <input id="one" name="trigger" type="radio">
+        <input id="two" name="trigger" type="radio">
+        <input id="three" name="trigger" type="radio">
+        <input id="four" name="trigger" type="radio">
+        <!-- 도전적 비전 1p -->
+        <div class="pages_page">
+            <div class="pages_page__inner"></div>
+        </div>
+        <!-- 도전적 비전 2p -->
+        <div class="pages_page">
+            <div class="pages_page__inner">
+                <div class="control next">
+                    <label for="two"></label>
                 </div>
             </div>
         </div>
-        <footer>푸터영역</footer>
+        <!-- 도전적 비전 3p -->
+        <div class="pages_page">
+            <div class="pages_page__inner">
+                <div class="control">
+                    <label for="one"></label>
+                </div>
+            </div>
+        </div>
+        <!-- 도전적 비전 4p -->
+        <div class="pages_page">
+            <div class="pages_page__inner">
+                <div class="control next">
+                    <label for="three"></label>
+                </div>
+            </div>
+        </div>
+        <!-- 도전적 비전 5p -->
+        <div class="pages_page">
+            <div class="pages_page__inner">
+                <div class="control">
+                    <label for="two"></label>
+                </div>
+            </div>
+        </div>
+        <!-- 도전적 비전 6p -->
+        <div class="pages_page">
+            <div class="pages_page__inner">
+                <div class="control next">
+                    <label for="four"></label>
+                </div>
+            </div>
+        </div>
+        <!-- 도전적 비전 7p -->
+        <div class="pages_page">
+            <div class="pages_page__inner">
+                <div class="control">
+                    <label for="three"></label>
+                </div>
+            </div>
+        </div>
+        <!-- 도전적 비전 8p -->
+        <div class="pages_page">
+            <div class="pages_page__inner"></div>
+        </div>
     </div>
+    <footer>푸터</footer>
 </body>
 </html>
