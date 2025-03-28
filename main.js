@@ -1,33 +1,52 @@
-$(function(){
+$(function () {
+  // 탭 초기화 함수
+  function initializeTabs(tabMenuSelector) {
+      $(tabMenuSelector).each(function () {
+          const $tabMenu = $(this);
+          const $tabList = $tabMenu.find(".tab-list > li");
+          const $tabCont = $tabMenu.find(".tab-cont > div");
 
-    const pages = document.querySelectorAll('.page');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentPage = 1; // 현재 보여지는 첫 번째 페이지 번호
-    
-    function showPages(pageNumber) {
-      // 모든 페이지 숨기기
-      pages.forEach(page => page.style.display = 'none');
-    
-      // 현재 페이지와 다음 페이지 보여주기
-      if (pageNumber >= 1 && pageNumber <= pages.length) {
-        pages[pageNumber - 1].style.display = 'flex'; // 현재 페이지
-      }
-      if (pageNumber + 1 <= pages.length) {
-        pages[pageNumber].style.display = 'flex'; // 다음 페이지
-      }
-    }
-    
-    prevBtn.addEventListener('click', () => {
-      currentPage = Math.max(currentPage - 2, 1); // 2 페이지씩 이전
-      showPages(currentPage);
-    });
-    
-    nextBtn.addEventListener('click', () => {
-      currentPage = Math.min(currentPage + 2, pages.length - 1); // 2 페이지씩 다음
-      showPages(currentPage);
-    });
-    
-    showPages(currentPage); // 초기 페이지 설정 (1, 2 페이지)
-    
+          $tabList.on("click", function () {
+              const tabIndex = $tabList.index(this);
+
+              $tabList.removeClass("on");
+              $tabCont.removeClass("on");
+
+              $(this).addClass("on");
+              $tabCont.eq(tabIndex).addClass("on");
+
+              setFlowBanner($tabCont.eq(tabIndex).find('.flow-banner'));
+          });
+      });
+  }
+
+  // 배너 초기화 및 화면 리사이즈 시 배너 처리
+  function handleBannerOnResize() {
+      setFlowBanner($('.tab-cont > div.on').find('.flow-banner'));
+  }
+
+  $(document).ready(function () {
+      initializeTabs(".tab-menu");
+      handleBannerOnResize(); // 초기 로드 시 배너 처리
+
+      // 화면 리사이즈 이벤트 핸들러
+      $(window).on('resize', handleBannerOnResize);
+  });
+
+  // Swiper 초기화 (각 Swiper 인스턴스를 개별적으로 생성)
+  $('.ceoSwiper, .ceoSwiper02, .ceoSwiper03, .ceoSwiper04').each(function () {
+      new Swiper(this, {
+          // autoHeight : true,
+          pagination: {
+              el: $(this).find(".swiper-pagination")[0], // 해당 Swiper 내부의 pagination 찾기
+              type: "fraction",
+          },
+          navigation: {
+              nextEl: $(this).find(".swiper-button-next")[0],
+              prevEl: $(this).find(".swiper-button-prev")[0],
+          },
+          observer: true,
+          observeParents: true,
+      });
+  });
 });
