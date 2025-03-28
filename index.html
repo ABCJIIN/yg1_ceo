@@ -11,70 +11,87 @@
     <!-- <link rel="stylesheet" href="/main.css"> -->
      <link rel="stylesheet" href="reset.css">
      <link rel="stylesheet" href="/common.css">
-    <!-- <script src="/main.js"></script> -->
+    <script src="/main.js"></script>
 </head>
 <body translate="no">
     <header>헤더</header>
-    <div class="pages">
-        <input id="one" name="trigger" type="radio">
-        <input id="two" name="trigger" type="radio">
-        <input id="three" name="trigger" type="radio">
-        <input id="four" name="trigger" type="radio">
-        <!-- 도전적 비전 1p -->
-        <div class="pages_page">
-            <div class="pages_page__inner"></div>
+    <div class="tab-menu">
+        <div class="tab-list-wrap">
+            <ul role="tablist" class="tab-list">
+                <li class="tab01 on" role="tab" aria-controls="tab-panel01"><a href="javascript:void(0)">도전적 비전</a></li>
+                <li class="tab02" role="tab" aria-controls="tab-panel02"><a href="javascript:void(0)">지속적 열정과 한 우물 파기</a></li>
+                <li class="tab03" role="tab" aria-controls="tab-panel03"><a href="javascript:void(0)">신속한 결정과 실행</a></li>
+                <li class="tab04" role="tab" aria-controls="tab-panel04"><a href="javascript:void(0)">소통과 협업</a></li>
+            </ul>
         </div>
-        <!-- 도전적 비전 2p -->
-        <div class="pages_page">
-            <div class="pages_page__inner">
-                <div class="control next">
-                    <label for="two"></label>
+        <div class="tab-cont">
+            <div class="tab-panel type01 on" role="tabpanel" aria-labelledby="tab01">
+                <div class="pages">
+                    <input id="one" name="trigger" type="radio">
+                    <input id="two" name="trigger" type="radio">
+                    <input id="three" name="trigger" type="radio">
+                    <input id="four" name="trigger" type="radio">
+                    <!-- 도전적 비전 1p -->
+                    <div class="pages_page">
+                        <div class="pages_page__inner"></div>
+                    </div>
+                    <!-- 도전적 비전 2p -->
+                    <div class="pages_page">
+                        <div class="pages_page__inner">
+                            <div class="control next">
+                                <label for="two"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 도전적 비전 3p -->
+                    <div class="pages_page">
+                        <div class="pages_page__inner">
+                            <div class="control">
+                                <label for="one"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 도전적 비전 4p -->
+                    <div class="pages_page">
+                        <div class="pages_page__inner">
+                            <div class="control next">
+                                <label for="three"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 도전적 비전 5p -->
+                    <div class="pages_page">
+                        <div class="pages_page__inner">
+                            <div class="control">
+                                <label for="two"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 도전적 비전 6p -->
+                    <div class="pages_page">
+                        <div class="pages_page__inner">
+                            <div class="control next">
+                                <label for="four"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 도전적 비전 7p -->
+                    <div class="pages_page">
+                        <div class="pages_page__inner">
+                            <div class="control">
+                                <label for="three"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 도전적 비전 8p -->
+                    <div class="pages_page">
+                        <div class="pages_page__inner"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- 도전적 비전 3p -->
-        <div class="pages_page">
-            <div class="pages_page__inner">
-                <div class="control">
-                    <label for="one"></label>
-                </div>
-            </div>
-        </div>
-        <!-- 도전적 비전 4p -->
-        <div class="pages_page">
-            <div class="pages_page__inner">
-                <div class="control next">
-                    <label for="three"></label>
-                </div>
-            </div>
-        </div>
-        <!-- 도전적 비전 5p -->
-        <div class="pages_page">
-            <div class="pages_page__inner">
-                <div class="control">
-                    <label for="two"></label>
-                </div>
-            </div>
-        </div>
-        <!-- 도전적 비전 6p -->
-        <div class="pages_page">
-            <div class="pages_page__inner">
-                <div class="control next">
-                    <label for="four"></label>
-                </div>
-            </div>
-        </div>
-        <!-- 도전적 비전 7p -->
-        <div class="pages_page">
-            <div class="pages_page__inner">
-                <div class="control">
-                    <label for="three"></label>
-                </div>
-            </div>
-        </div>
-        <!-- 도전적 비전 8p -->
-        <div class="pages_page">
-            <div class="pages_page__inner"></div>
+            <div class="tab-panel type02" role="tabpanel" aria-labelledby="tab02"></div>
+            <div class="tab-panel type03" role="tabpanel" aria-labelledby="tab03"></div>
+            <div class="tab-panel type04" role="tabpanel" aria-labelledby="tab04"></div>
         </div>
     </div>
     <footer>푸터</footer>
