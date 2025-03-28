@@ -35,7 +35,7 @@ body .pages {
   height: 930px;
   margin: 0 auto;
   perspective: var(--perspective);
-  box-shadow: 0 41px 38px -20px #0a3150;
+  box-shadow: 0 41px 38px -20px rgba(34, 34, 34, 0.35);
 }
 body .pages input {
   display: none;
@@ -317,7 +317,7 @@ body .pages input[type=radio]:nth-of-type(4):checked + div + div + div + div + d
 
 .tab-list-wrap {
   max-width: 1480px;
-  margin: 0 auto;
+  margin: 0 auto 28px;
 }
 
 .tab-menu .tab-list {
