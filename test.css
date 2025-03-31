@@ -159,7 +159,6 @@ img {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    user-drag: none;
 }
 
 .swiper > .btn-wrap .swiper-button-prev,
@@ -221,7 +220,7 @@ img {
     .swiper-slide {
         max-width: 768px;
         max-height: 993px;
-        aspect-ratio : 14/18;
+        aspect-ratio : 28/36;
     }
 }
 
