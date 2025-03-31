@@ -24,9 +24,8 @@ $(function () {
     });
 
     // Swiper 초기화 (각 Swiper 인스턴스를 개별적으로 생성)
-    $('.ceoSwiper, .ceoSwiper02, .ceoSwiper03, .ceoSwiper04').each(function () {
+    $('.ceoSwiper, .ceoSwiper02, .ceoSwiper03, .ceoSwiper04, .ceoSwiper05, .ceoSwiper06, .ceoSwiper07, .ceoSwiper08').each(function () {
         new Swiper(this, {
-            // autoHeight : true,
             effect: "fade",
             navigation: {
                 nextEl: $(this).find(".swiper-button-next")[0],
@@ -36,4 +35,5 @@ $(function () {
             observeParents: true,
         });
     });
+    // swiper.update();
 });
