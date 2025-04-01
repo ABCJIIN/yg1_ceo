@@ -18,57 +18,76 @@ $(function () {
     function initializeSwiper() {
         if (window.pcSwiper) window.pcSwiper.destroy(true, true);
         if (window.moSwiper) window.moSwiper.destroy(true, true);
-
+    
         window.pcSwiper = new Swiper(".ceoSwiper", {
             effect: "fade",
+            loop: true,
             navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
             observer: true,
             observeParents: true,
             on: {
                 slideChange: function () {
-                    updateTabState(this.activeIndex, ".tab-list-wrap:not(.mo) .tab-list li");
+                    updateTabState(this, ".tab-list-wrap:not(.mo) .tab-list li");
                 },
             },
         });
-
+    
         window.moSwiper = new Swiper(".ceoSwiper02", {
             effect: "fade",
+            loop: true,
             navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
             observer: true,
             observeParents: true,
             on: {
                 slideChange: function () {
-                    updateTabState(this.activeIndex, ".tab-list-wrap.mo .tab-list li");
+                    updateTabState(this, ".tab-list-wrap.mo .tab-list li");
                 },
             },
         });
     }
+    
 
-    function updateTabState(activeIndex, tabSelector) {
-        $(tabSelector).removeClass("on").each(function () {
-            const slideIndex = parseInt($(this).data("slide"), 10);
-            if (activeIndex >= slideIndex) {
-                $(this).addClass("on").siblings().removeClass("on");
-            }
-        });
-
+    function updateTabState(swiper, tabSelector) {
+        let realIndex = swiper.realIndex; // Swiper의 실제 인덱스
+    
+        // ✅ PC와 모바일에 따라 다른 인덱스 배열 사용
+        let targetIndexes = $(tabSelector).closest(".tab-list-wrap").hasClass("mo")
+            ? [0, 8, 16, 20] // 모바일에서는 이 배열 사용
+            : [0, 4, 8, 10]; // PC에서는 이 배열 사용
+    
+        let matchedIndex = targetIndexes.indexOf(realIndex);
+    
+        if (matchedIndex !== -1) {
+            $(tabSelector).removeClass("on").eq(matchedIndex).addClass("on");
+        }
+    
+        // 모바일 화면일 때만 스크롤 이동
         if ($(tabSelector).closest(".tab-list-wrap").hasClass("mo")) {
             scrollActiveTabIntoView();
         }
     }
-
+    
     function bindTabClick() {
         $(".tab-list-wrap .tab-list li").on("click", function () {
-            const targetSlide = parseInt($(this).data("slide"), 10);
-
-            if ($(this).closest(".tab-list-wrap").hasClass("mo")) {
-                moSwiper.slideTo(targetSlide);
-            } else {
-                pcSwiper.slideTo(targetSlide);
+            let tabIndex = $(this).index(); // 클릭한 li의 인덱스 가져오기
+    
+            // ✅ PC와 모바일에 따라 다른 targetIndexes 사용
+            let targetIndexes = $(this).closest(".tab-list-wrap").hasClass("mo")
+                ? [0, 8, 16, 20] // 모바일
+                : [0, 4, 8, 10]; // PC
+    
+            let targetSlide = targetIndexes[tabIndex];
+    
+            if (targetSlide !== undefined) {
+                if ($(this).closest(".tab-list-wrap").hasClass("mo")) {
+                    moSwiper.slideToLoop(targetSlide);
+                } else {
+                    pcSwiper.slideToLoop(targetSlide);
+                }
             }
         });
     }
-
+    
     $(document).ready(function () {
         initializeSwiper();
         bindTabClick();
