@@ -75,31 +75,31 @@ footer {
 }
 .tab-panel.type01 .pages_page:nth-of-type(1) .pages_page__inner {
   transform: rotateY(0deg) !important;
-  background: url(./ceo_philosophy_01_01.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_01_01.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page:nth-of-type(2) {
   pointer-events: all;
 }
 .tab-panel.type01 .pages_page:nth-of-type(2) .pages_page__inner {
-  background: url(./ceo_philosophy_01_02.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_01_02.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page:nth-of-type(3) .pages_page__inner {
-  background: url(./ceo_philosophy_01_03.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_01_03.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page:nth-of-type(4) .pages_page__inner {
-  background: url(./ceo_philosophy_01_04.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_01_04.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page:nth-of-type(5) .pages_page__inner {
-  background: url(./ceo_philosophy_01_05.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_01_05.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page:nth-of-type(6) .pages_page__inner {
-  background: url(./ceo_philosophy_01_06.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_01_06.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page:nth-of-type(7) .pages_page__inner {
-  background: url(./ceo_philosophy_01_07.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_01_07.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page:nth-of-type(8) .pages_page__inner {
-  background: url(./ceo_philosophy_01_08.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_01_08.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page__inner {
   height: 100%;
@@ -116,7 +116,7 @@ footer {
   transform: translateY(-50%);
   left: -64px;
   cursor: pointer;
-  background: url(./arrow_prev.png) no-repeat center/contain;
+  background: url(../img/arrow_prev.png) no-repeat center/contain;
   transition: all 0.23s;
 }
 .tab-panel.type01 .pages_page__inner .control:hover {
@@ -125,7 +125,7 @@ footer {
 .tab-panel.type01 .pages_page__inner .control.next {
   left: auto;
   right: -64px;
-  background: url(./arrow_next.png) no-repeat center/contain;
+  background: url(../img/arrow_next.png) no-repeat center/contain;
 }
 .tab-panel.type01 .pages_page__inner .control label {
   position: absolute;
@@ -335,31 +335,31 @@ footer {
 }
 .tab-panel.type02 .pages_page:nth-of-type(1) .pages_page__inner {
   transform: rotateY(0deg) !important;
-  background: url(./ceo_philosophy_02_01.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_02_01.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page:nth-of-type(2) {
   pointer-events: all;
 }
 .tab-panel.type02 .pages_page:nth-of-type(2) .pages_page__inner {
-  background: url(./ceo_philosophy_02_02.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_02_02.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page:nth-of-type(3) .pages_page__inner {
-  background: url(./ceo_philosophy_02_03.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_02_03.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page:nth-of-type(4) .pages_page__inner {
-  background: url(./ceo_philosophy_02_04.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_02_04.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page:nth-of-type(5) .pages_page__inner {
-  background: url(./ceo_philosophy_02_05.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_02_05.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page:nth-of-type(6) .pages_page__inner {
-  background: url(./ceo_philosophy_02_06.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_02_06.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page:nth-of-type(7) .pages_page__inner {
-  background: url(./ceo_philosophy_02_07.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_02_07.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page:nth-of-type(8) .pages_page__inner {
-  background: url(./ceo_philosophy_02_08.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_02_08.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page__inner {
   height: 100%;
@@ -376,7 +376,7 @@ footer {
   transform: translateY(-50%);
   left: -64px;
   cursor: pointer;
-  background: url(./arrow_prev.png) no-repeat center/contain;
+  background: url(../img/arrow_prev.png) no-repeat center/contain;
   transition: all 0.23s;
 }
 .tab-panel.type02 .pages_page__inner .control:hover {
@@ -385,7 +385,7 @@ footer {
 .tab-panel.type02 .pages_page__inner .control.next {
   left: auto;
   right: -64px;
-  background: url(./arrow_next.png) no-repeat center/contain;
+  background: url(../img/arrow_next.png) no-repeat center/contain;
 }
 .tab-panel.type02 .pages_page__inner .control label {
   position: absolute;
@@ -579,19 +579,19 @@ footer {
 }
 .tab-panel.type03 .pages_page:nth-of-type(1) .pages_page__inner {
   transform: rotateY(0deg) !important;
-  background: url(./ceo_philosophy_03_01.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_03_01.png) no-repeat center/contain;
 }
 .tab-panel.type03 .pages_page:nth-of-type(2) {
   pointer-events: all;
 }
 .tab-panel.type03 .pages_page:nth-of-type(2) .pages_page__inner {
-  background: url(./ceo_philosophy_03_02.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_03_02.png) no-repeat center/contain;
 }
 .tab-panel.type03 .pages_page:nth-of-type(3) .pages_page__inner {
-  background: url(./ceo_philosophy_03_03.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_03_03.png) no-repeat center/contain;
 }
 .tab-panel.type03 .pages_page:nth-of-type(4) .pages_page__inner {
-  background: url(./ceo_philosophy_03_04.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_03_04.png) no-repeat center/contain;
 }
 .tab-panel.type03 .pages_page__inner {
   height: 100%;
@@ -608,7 +608,7 @@ footer {
   transform: translateY(-50%);
   left: -64px;
   cursor: pointer;
-  background: url(./arrow_prev.png) no-repeat center/contain;
+  background: url(../img/arrow_prev.png) no-repeat center/contain;
   transition: all 0.23s;
 }
 .tab-panel.type03 .pages_page__inner .control:hover {
@@ -617,7 +617,7 @@ footer {
 .tab-panel.type03 .pages_page__inner .control.next {
   left: auto;
   right: -64px;
-  background: url(./arrow_next.png) no-repeat center/contain;
+  background: url(../img/arrow_next.png) no-repeat center/contain;
 }
 .tab-panel.type03 .pages_page__inner .control label {
   position: absolute;
@@ -681,19 +681,19 @@ footer {
 }
 .tab-panel.type04 .pages_page:nth-of-type(1) .pages_page__inner {
   transform: rotateY(0deg) !important;
-  background: url(./ceo_philosophy_04_01.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_04_01.png) no-repeat center/contain;
 }
 .tab-panel.type04 .pages_page:nth-of-type(2) {
   pointer-events: all;
 }
 .tab-panel.type04 .pages_page:nth-of-type(2) .pages_page__inner {
-  background: url(./ceo_philosophy_04_02.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_04_02.png) no-repeat center/contain;
 }
 .tab-panel.type04 .pages_page:nth-of-type(3) .pages_page__inner {
-  background: url(./ceo_philosophy_04_03.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_04_03.png) no-repeat center/contain;
 }
 .tab-panel.type04 .pages_page:nth-of-type(4) .pages_page__inner {
-  background: url(./ceo_philosophy_04_04.png) no-repeat center/contain;
+  background: url(../img/ceo_philosophy_04_04.png) no-repeat center/contain;
 }
 .tab-panel.type04 .pages_page__inner {
   height: 100%;
@@ -710,7 +710,7 @@ footer {
   transform: translateY(-50%);
   left: -64px;
   cursor: pointer;
-  background: url(./arrow_prev.png) no-repeat center/contain;
+  background: url(../img/arrow_prev.png) no-repeat center/contain;
   transition: all 0.23s;
 }
 .tab-panel.type04 .pages_page__inner .control:hover {
@@ -719,7 +719,7 @@ footer {
 .tab-panel.type04 .pages_page__inner .control.next {
   left: auto;
   right: -64px;
-  background: url(./arrow_next.png) no-repeat center/contain;
+  background: url(../img/arrow_next.png) no-repeat center/contain;
 }
 .tab-panel.type04 .pages_page__inner .control label {
   position: absolute;
@@ -782,7 +782,7 @@ footer {
   transform: translateY(-50%);
   left: -64px;
   cursor: pointer;
-  background: url(./arrow_prev.png) no-repeat center/contain;
+  background: url(../img/arrow_prev.png) no-repeat center/contain;
   transition: all 0.23s;
 }
 .tab-panel .pages_page__inner .control:hover {
@@ -791,7 +791,7 @@ footer {
 .tab-panel .pages_page__inner .control.next {
   left: auto;
   right: -64px;
-  background: url(./arrow_next.png) no-repeat center/contain;
+  background: url(../img/arrow_next.png) no-repeat center/contain;
 }
 .tab-panel .pages_page__inner .control label {
   position: absolute;
@@ -884,7 +884,7 @@ footer {
   bottom: 160px;
   width: clamp(390px, 33.33vw, 640px);
   height: clamp(329px, 28.13vw, 540px);
-  background: url(./img/ceo_word_bg01.png) no-repeat right bottom/contain;
+  background: url(../img/ceo_word_bg01.png) no-repeat right bottom/contain;
 }
 
 .tab-panel.type02 .ceo-img {
@@ -893,7 +893,7 @@ footer {
   bottom: 160px;
   width: clamp(390px, 33.33vw, 640px);
   height: clamp(329px, 28.13vw, 540px);
-  background: url(./img/ceo_word_bg02.png) no-repeat right bottom/contain;
+  background: url(../img/ceo_word_bg02.png) no-repeat right bottom/contain;
 }
 
 .tab-panel.type03 .ceo-img {
@@ -902,7 +902,7 @@ footer {
   bottom: 160px;
   width: clamp(390px, 33.33vw, 640px);
   height: clamp(329px, 28.13vw, 540px);
-  background: url(./img/ceo_word_bg03.png) no-repeat right bottom/contain;
+  background: url(../img/ceo_word_bg03.png) no-repeat right bottom/contain;
 }
 
 .tab-panel.type04 .ceo-img {
@@ -911,5 +911,5 @@ footer {
   bottom: 160px;
   width: clamp(390px, 33.33vw, 640px);
   height: clamp(329px, 28.13vw, 540px);
-  background: url(./img/ceo_word_bg04.png) no-repeat right bottom/contain;
+  background: url(../img/ceo_word_bg04.png) no-repeat right bottom/contain;
 }
